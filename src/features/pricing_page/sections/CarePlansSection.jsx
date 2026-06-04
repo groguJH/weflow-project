@@ -38,7 +38,7 @@ export default function CarePlansSection() {
             )}
 
             {/* Tier badge */}
-            <span className={`inline-block self-start mb-3 px-2.5 py-0.5 rounded-md text-[10px] font-bold tracking-wider border ${
+            <span className={`inline-block self-start mb-3 px-2.5 py-0.5 rounded-md text-[0.625rem] font-bold tracking-wider border ${
               plan.isTop
                 ? 'bg-amber-500/10 border-amber-500/30 text-amber-400'
                 : 'bg-blue-900/40 border-blue-800/50 text-blue-400'
@@ -53,11 +53,13 @@ export default function CarePlansSection() {
 
             {/* Price */}
             <div className="mb-5">
-              <p className="text-xs text-slate-500 line-through decoration-red-400 mb-0.5">{plan.originalPrice}</p>
+              {plan.originalPrice && (
+                <p className="text-xs text-slate-500 line-through decoration-red-400 mb-0.5">{plan.originalPrice}</p>
+              )}
               <span className={`text-2xl font-black ${plan.isTop ? 'text-amber-400' : 'text-blue-400'}`}>
                 {plan.price}
               </span>
-              <p className="text-[10px] text-slate-500 mt-0.5">VAT 포함</p>
+              <p className="text-[0.625rem] text-slate-500 mt-0.5">VAT 포함</p>
             </div>
 
             <ul className="space-y-2.5 flex-1 mb-6">
@@ -87,10 +89,10 @@ export default function CarePlansSection() {
 
       <div className="flex flex-col items-center mt-8 gap-2">
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-slate-700/60 bg-slate-900/40 text-slate-400 text-xs">
-          <Info size={13} className="text-slate-500 flex-shrink-0" />
+          <Info size="1em" className="text-[0.8125rem] text-slate-500 flex-shrink-0" />
           {PRICING_NOTICE}
         </div>
-        <p className="text-[11px] text-slate-600 text-center leading-relaxed">
+        <p className="text-[0.6875rem] text-slate-600 text-center leading-relaxed">
           ※ 유지보수는 텍스트, 이미지, 링크 등 경미한 수정 기준입니다.&nbsp;&nbsp;페이지 추가 및 기능 개발은 별도 비용이 발생할 수 있습니다.
         </p>
       </div>

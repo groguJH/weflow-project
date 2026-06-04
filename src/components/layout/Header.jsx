@@ -13,7 +13,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center gap-2">
-            <Image src="/logo_icon.png" alt="WEFLOW" width={48} height={48} className="object-contain" />
+            <Image src="/logo_icon.png" alt="WEFLOW" width={48} height={48} className="size-12 object-contain" />
             <span className="text-2xl font-black tracking-tight">
               <span className="text-white">WE</span>
               <span className="bg-gradient-to-r from-cyan-300 to-blue-500 bg-clip-text text-transparent">FLOW</span>

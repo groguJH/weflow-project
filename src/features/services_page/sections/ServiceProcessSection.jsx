@@ -10,7 +10,7 @@ function StepCard({ step, icon: Icon }) {
         {step.number}
       </span>
       <div className="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/30 flex items-center justify-center mb-5 shadow-lg shadow-blue-500/10">
-        <Icon size={18} className="text-cyan-400" />
+        <Icon size="1em" className="text-[1.125rem] text-cyan-400" />
       </div>
       <p className="text-xs text-cyan-500 font-bold mb-1.5">{step.number}</p>
       <h3 className="text-base font-bold text-white mb-2">{step.title}</h3>
@@ -22,8 +22,8 @@ function StepCard({ step, icon: Icon }) {
 function Arrow() {
   return (
     <div className="flex items-center justify-center py-2 md:py-0 md:px-3">
-      <ChevronDown size={18} className="md:hidden text-blue-500/50" />
-      <ChevronRight size={18} className="hidden md:inline text-blue-500/50" />
+      <ChevronDown size="1em" className="text-[1.125rem] md:hidden text-blue-500/50" />
+      <ChevronRight size="1em" className="text-[1.125rem] hidden md:inline text-blue-500/50" />
     </div>
   );
 }

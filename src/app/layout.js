@@ -2,7 +2,7 @@ import { Geist } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import BottomBar from "@/components/layout/BottomBar";
+import FloatingQuickMenu from "@/components/layout/FloatingQuickMenu";
 import FormModal from "@/components/ui/FormModal";
 
 const geist = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
@@ -19,16 +19,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="ko" className={geist.variable}>
-      <body
-        className="min-h-screen text-slate-100 antialiased"
-        style={{
-          paddingBottom: "calc(64px + env(safe-area-inset-bottom, 0px))",
-        }}
-      >
+      <body className="min-h-screen text-slate-100 antialiased">
         <Header />
         <main>{children}</main>
         <Footer />
-        <BottomBar />
+        <FloatingQuickMenu />
         <FormModal />
       </body>
     </html>

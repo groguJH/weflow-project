@@ -37,12 +37,12 @@ export default function LandingFeaturesSection() {
                   className="flex-1 flex items-center gap-3 px-4 py-5 hover:bg-slate-800/30 transition-colors duration-200"
                 >
                   <div className="flex-shrink-0 w-9 h-9 rounded-xl bg-blue-900/40 border border-blue-500/20 flex items-center justify-center">
-                    <Icon size={16} className="text-cyan-400" />
+                    <Icon size="1em" className="text-[1rem] text-cyan-400" />
                   </div>
                   <div className="min-w-0">
-                    <p className="text-[10px] font-bold text-blue-400 leading-none mb-1">{num}</p>
+                    <p className="text-[0.625rem] font-bold text-blue-400 leading-none mb-1">{num}</p>
                     <p className="text-xs font-bold text-white leading-tight">{card.title}</p>
-                    <p className="text-[11px] text-slate-400 leading-tight mt-0.5 truncate">{card.desc}</p>
+                    <p className="text-[0.6875rem] text-slate-400 leading-tight mt-0.5 truncate">{card.desc}</p>
                   </div>
                 </div>
               );
@@ -57,7 +57,7 @@ export default function LandingFeaturesSection() {
           <h2 className="text-2xl font-black text-white">{BENEFITS.sectionTitle}</h2>
         </div>
         <div className="px-4">
-          <div className="overflow-x-auto mobile-scrollbar rounded-2xl border border-slate-800/60 bg-slate-900/40" style={{ paddingBottom: '6px' }}>
+          <div className="overflow-x-auto mobile-scrollbar rounded-2xl border border-slate-800/60 bg-slate-900/40 pb-[0.375rem]">
             <div className="flex divide-x divide-slate-800/60">
               {BENEFITS.cards.map((card, idx) => {
                 const Icon = ICONS[idx];
@@ -65,15 +65,15 @@ export default function LandingFeaturesSection() {
                 return (
                   <div
                     key={card.title}
-                    className="flex-none w-[160px] flex items-center gap-3 px-4 py-5"
+                    className="flex-none w-[10rem] flex items-center gap-3 px-4 py-5"
                   >
                     <div className="flex-shrink-0 w-9 h-9 rounded-xl bg-blue-900/40 border border-blue-500/20 flex items-center justify-center">
-                      <Icon size={16} className="text-cyan-400" />
+                      <Icon size="1em" className="text-[1rem] text-cyan-400" />
                     </div>
                     <div className="min-w-0">
-                      <p className="text-[10px] font-bold text-blue-400 leading-none mb-1">{num}</p>
+                      <p className="text-[0.625rem] font-bold text-blue-400 leading-none mb-1">{num}</p>
                       <p className="text-xs font-bold text-white leading-tight">{card.title}</p>
-                      <p className="text-[11px] text-slate-400 leading-tight mt-0.5">{card.desc}</p>
+                      <p className="text-[0.6875rem] text-slate-400 leading-tight mt-0.5">{card.desc}</p>
                     </div>
                   </div>
                 );
@@ -87,7 +87,7 @@ export default function LandingFeaturesSection() {
       <div className="py-16 flex flex-col items-center text-center px-4">
         {/* 따옴표 아이콘 */}
         <div className="w-14 h-14 rounded-full bg-blue-900/50 border border-blue-700/30 flex items-center justify-center mb-8">
-          <span className="text-blue-400 text-2xl font-black leading-none select-none">"</span>
+          <span className="text-blue-400 text-2xl font-black leading-none select-none"></span>
         </div>
 
         {/* 메인 헤드라인 */}

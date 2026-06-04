@@ -5,7 +5,7 @@ import { BOTTOM_BAR } from '@/data/commonText';
 
 export default function BottomBar() {
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-50 bg-[#0a0f1e] border-t border-slate-800" style={{ paddingBottom: 'env(safe-area-inset-bottom, 0px)' }}>
+    <div className="fixed bottom-0 left-0 right-0 z-50 bg-[#0a0f1e] border-t border-slate-800 pb-safe">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-4">
           {BOTTOM_BAR.map((item) =>

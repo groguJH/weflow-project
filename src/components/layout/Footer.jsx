@@ -6,7 +6,7 @@ import { FOOTER } from '@/data/commonText';
 export default function Footer() {
   return (
     <footer className="relative bg-[#0a0f1e] border-t border-slate-800 pt-12 pb-6 mt-20 overflow-hidden">
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-px bg-gradient-to-r from-transparent via-blue-500/30 to-transparent" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[0.0625rem] bg-gradient-to-r from-transparent via-blue-500/30 to-transparent" />
 
       <div className="w-full px-8 sm:px-12 lg:px-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
@@ -14,7 +14,7 @@ export default function Footer() {
           {/* 1번: 로고 + 정보 + legal */}
           <div className="flex flex-col">
             <Link href="/">
-              <Image src="/logo_icon.png" alt="WEFLOW" width={40} height={40} className="object-contain" />
+              <Image src="/logo_icon.png" alt="WEFLOW" width={40} height={40} className="size-10 object-contain" />
             </Link>
             <p className="mt-4 text-sm text-slate-400 leading-relaxed whitespace-pre-line">
               {FOOTER.tagline}
@@ -77,7 +77,7 @@ export default function Footer() {
                   <li key={item.label}>
                     <Link href={item.href} className="inline-flex items-center gap-1.5 text-sm text-slate-400 hover:text-white transition-colors">
                       {item.label}
-                      <ExternalLink size={11} className="text-slate-600" />
+                      <ExternalLink size="1em" className="text-[0.6875rem] text-slate-600" />
                     </Link>
                   </li>
                 ))}

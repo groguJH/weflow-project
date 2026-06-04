@@ -11,7 +11,7 @@ export default function PricingPage() {
   return (
     <div className="pt-16">
       <div className="relative px-4 sm:px-6 lg:px-8 py-12 overflow-hidden">
-        <div className="absolute -top-20 right-0 w-[500px] h-[500px] bg-cyan-400/7 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute -top-20 right-0 w-[31.25rem] h-[31.25rem] bg-cyan-400/7 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute bottom-0 left-0 w-80 h-80 bg-blue-600/8 rounded-full blur-3xl pointer-events-none" />
         <div className="relative flex flex-col items-center justify-center text-center gap-4">
           <span className="px-5 py-1.5 rounded-full border border-blue-800/50 bg-blue-900/30 text-blue-400 text-xs tracking-[0.3em] font-semibold uppercase">

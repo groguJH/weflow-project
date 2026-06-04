@@ -15,6 +15,24 @@ export const HERO = {
   ],
 };
 
+export const HERO_ORBIT_BADGES = [
+  {
+    title: '3~7일',
+    description: '빠른 납품',
+    angle: -36,
+  },
+  {
+    title: '24시간',
+    description: '상담 가능',
+    angle: 158,
+  },
+  {
+    title: '실시간 상담중',
+    variant: 'live',
+    angle: 58,
+  },
+];
+
 export const BENEFITS = {
   sectionTitle: 'WEFLOW만의 케어 플랜 혜택',
   ctaButton: '문의를 늘리는 무료진단',

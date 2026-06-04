@@ -5,7 +5,7 @@ import { PRODUCTION_PLANS, PRICING_NOTICE } from '@/data/pricingText';
 export default function ProductionPlansSection() {
   return (
     <section className="relative py-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-64 bg-cyan-400/7 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[37.5rem] h-64 bg-cyan-400/7 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 right-0 w-72 h-72 bg-blue-600/8 rounded-full blur-3xl pointer-events-none" />
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
         {PRODUCTION_PLANS.plans.map((plan) => {
@@ -24,8 +24,8 @@ export default function ProductionPlansSection() {
               {/* Top glow line */}
               {isTop && (
                 <>
-                  <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-cyan-400 to-transparent" />
-                  <div className="absolute inset-x-8 top-0 h-[6px] bg-cyan-400/40 blur-md" />
+                  <div className="absolute inset-x-0 top-0 h-[0.0625rem] bg-gradient-to-r from-transparent via-cyan-400 to-transparent" />
+                  <div className="absolute inset-x-8 top-0 h-[0.375rem] bg-cyan-400/40 blur-md" />
                 </>
               )}
 
@@ -37,7 +37,7 @@ export default function ProductionPlansSection() {
               )}
 
               {/* Tier badge */}
-              <span className="inline-block self-start mb-3 px-2.5 py-0.5 rounded-md bg-blue-900/40 border border-blue-800/50 text-blue-400 text-[10px] font-bold tracking-wider">
+              <span className="inline-block self-start mb-3 px-2.5 py-0.5 rounded-md bg-blue-900/40 border border-blue-800/50 text-blue-400 text-[0.625rem] font-bold tracking-wider">
                 {plan.tier}
               </span>
 
@@ -47,7 +47,7 @@ export default function ProductionPlansSection() {
               {/* Duration badge */}
               {duration && (
                 <div className="inline-flex items-center gap-1.5 self-start mb-5 px-2.5 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-300 text-xs font-semibold">
-                  <Zap size={11} className="text-blue-400" />
+                  <Zap size="1em" className="text-[0.6875rem] text-blue-400" />
                   {duration}
                 </div>
               )}
@@ -94,7 +94,7 @@ export default function ProductionPlansSection() {
 
       <div className="flex justify-center mt-8">
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-slate-700/60 bg-slate-900/40 text-slate-400 text-xs">
-          <Info size={13} className="text-slate-500 flex-shrink-0" />
+          <Info size="1em" className="text-[0.8125rem] text-slate-500 flex-shrink-0" />
           {PRICING_NOTICE}
         </div>
       </div>

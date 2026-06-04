@@ -23,7 +23,7 @@ export default function ManagementSystemSection() {
 
   return (
     <section className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-cyan-400/6 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-0 right-0 w-[31.25rem] h-[31.25rem] bg-cyan-400/6 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-600/8 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-blue-950/10 to-transparent pointer-events-none" />
 
@@ -47,14 +47,14 @@ export default function ManagementSystemSection() {
               <div
                 key={group.title}
                 className={`relative bg-slate-900/50 backdrop-blur-sm border border-white/[0.07] rounded-2xl p-6 overflow-hidden
-                  before:absolute before:inset-x-0 before:top-0 before:h-[2px] before:bg-gradient-to-r ${theme.topBorder}`}
+                  before:absolute before:inset-x-0 before:top-0 before:h-[0.125rem] before:bg-gradient-to-r ${theme.topBorder}`}
               >
                 {/* Card header */}
                 <div className="flex items-center gap-3 mb-5">
                   <span className="text-2xl">{group.icon}</span>
                   <div>
                     <h3 className="text-base font-bold text-white leading-tight">{group.title}</h3>
-                    <span className={`inline-block mt-1 px-2 py-0.5 rounded-full border text-[10px] font-bold ${theme.badge}`}>
+                    <span className={`inline-block mt-1 px-2 py-0.5 rounded-full border text-[0.625rem] font-bold ${theme.badge}`}>
                       {group.badge}
                     </span>
                   </div>

@@ -22,15 +22,15 @@ export default function BenefitsSection() {
               return (
                 <div
                   key={card.title}
-                  className="flex-1 min-w-[200px] flex items-center gap-3 px-4 py-5 hover:bg-slate-800/30 transition-colors duration-200"
+                  className="flex-1 min-w-[12.5rem] flex items-center gap-3 px-4 py-5 hover:bg-slate-800/30 transition-colors duration-200"
                 >
                   <div className="flex-shrink-0 w-9 h-9 rounded-xl bg-blue-900/40 border border-blue-500/20 flex items-center justify-center">
-                    <Icon size={16} className="text-cyan-400" />
+                    <Icon size="1em" className="text-[1rem] text-cyan-400" />
                   </div>
                   <div className="min-w-0">
-                    <p className="text-[10px] font-bold text-blue-400 leading-none mb-1">{num}</p>
+                    <p className="text-[0.625rem] font-bold text-blue-400 leading-none mb-1">{num}</p>
                     <p className="text-xs font-bold text-white leading-tight">{card.title}</p>
-                    <p className="text-[11px] text-slate-400 leading-tight mt-0.5">{card.desc}</p>
+                    <p className="text-[0.6875rem] text-slate-400 leading-tight mt-0.5">{card.desc}</p>
                   </div>
                 </div>
               );

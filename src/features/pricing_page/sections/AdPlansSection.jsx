@@ -38,12 +38,12 @@ export default function AdPlansSection() {
           return (
             <div
               key={plan.name}
-              className={`flex flex-col bg-slate-900/50 backdrop-blur-sm border border-slate-800/60 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg min-h-[554px] ${t.border}`}
+              className={`flex flex-col bg-slate-900/50 backdrop-blur-sm border border-slate-800/60 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg min-h-[34.625rem] ${t.border}`}
             >
               {/* Icon + name */}
               <div className="flex items-center gap-3 mb-5">
                 <div className={`w-10 h-10 rounded-xl border flex items-center justify-center flex-shrink-0 ${t.iconBg}`}>
-                  <Icon size={18} className={t.iconColor} />
+                  <Icon size="1em" className={`${t.iconColor} text-[1.125rem]`} />
                 </div>
                 <h3 className="text-lg font-black text-white">{plan.name}</h3>
               </div>
@@ -59,7 +59,7 @@ export default function AdPlansSection() {
                 {plan.tags.map((tag) => (
                   <span
                     key={tag}
-                    className={`px-2 py-1 rounded-full border text-[10px] font-medium ${t.tag}`}
+                    className={`px-2 py-1 rounded-full border text-[0.625rem] font-medium ${t.tag}`}
                   >
                     {tag}
                   </span>
@@ -72,7 +72,7 @@ export default function AdPlansSection() {
 
       <div className="flex justify-center mt-8">
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-slate-700/60 bg-slate-900/40 text-slate-400 text-xs">
-          <Info size={13} className="text-slate-500 flex-shrink-0" />
+          <Info size="1em" className="text-[0.8125rem] text-slate-500 flex-shrink-0" />
           {PRICING_NOTICE}
         </div>
       </div>

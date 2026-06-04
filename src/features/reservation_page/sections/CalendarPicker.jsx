@@ -73,7 +73,7 @@ export default function CalendarPicker({ selectedDate, onSelect }) {
               : 'text-slate-400 hover:text-white hover:bg-white/[0.06]'
           }`}
         >
-          <ChevronLeft size={18} />
+          <ChevronLeft size="1em" className="text-[1.125rem]" />
         </button>
         <span className="text-base font-bold text-white">
           {year}년 {MONTH_NAMES[month]}
@@ -83,7 +83,7 @@ export default function CalendarPicker({ selectedDate, onSelect }) {
           onClick={goToNext}
           className="p-2 rounded-lg text-slate-400 hover:text-white hover:bg-white/[0.06] transition-colors"
         >
-          <ChevronRight size={18} />
+          <ChevronRight size="1em" className="text-[1.125rem]" />
         </button>
       </div>
 

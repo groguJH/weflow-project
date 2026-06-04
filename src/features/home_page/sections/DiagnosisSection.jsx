@@ -5,7 +5,7 @@ import { DIAGNOSIS } from '@/data/homeText';
 export default function DiagnosisSection() {
   return (
     <section className="relative py-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-64 bg-cyan-400/7 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[31.25rem] h-64 bg-cyan-400/7 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 right-0 w-64 h-64 bg-blue-600/8 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute inset-0 bg-gradient-to-r from-blue-950/10 via-transparent to-blue-950/10 pointer-events-none" />
 
@@ -29,7 +29,7 @@ export default function DiagnosisSection() {
                   idx < DIAGNOSIS.items.length - 1 ? 'border-b border-slate-800' : ''
                 }`}
               >
-                <CheckCircle2 size={20} className="text-cyan-400 flex-shrink-0 mt-0.5" />
+                <CheckCircle2 size="1em" className="text-[1.25rem] text-cyan-400 flex-shrink-0 mt-0.5" />
                 <p className="text-sm text-slate-200 leading-relaxed">
                   <span className="font-semibold text-white">{item.main}</span>
                   {' '}
@@ -45,7 +45,7 @@ export default function DiagnosisSection() {
               href="/reservation"
               className="flex items-center justify-center gap-2.5 w-full py-4 rounded-xl font-bold text-white text-sm bg-gradient-to-r from-blue-600 to-cyan-400 hover:from-blue-500 hover:to-cyan-300 transition-all shadow-lg shadow-blue-500/30"
             >
-              <Search size={16} />
+              <Search size="1em" className="text-[1rem]" />
               {DIAGNOSIS.ctaButton}
             </Link>
           </div>

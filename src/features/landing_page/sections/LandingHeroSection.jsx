@@ -4,7 +4,7 @@ import { LANDING_HERO } from '@/data/landingText';
 export default function LandingHeroSection() {
   return (
     <section className="relative pt-12 pb-16 overflow-hidden">
-      <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[700px] h-[500px] bg-blue-700/12 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[43.75rem] h-[31.25rem] bg-blue-700/12 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute inset-0 bg-gradient-to-b from-blue-950/20 via-transparent to-transparent pointer-events-none" />
 
       <div className="relative flex flex-col items-center text-center">

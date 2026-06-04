@@ -2,7 +2,6 @@ export const NAV = {
   logo: 'WEFLOW',
   links: [
     { label: '홈', href: '/' },
-    { label: '서비스', href: '/services' },
     { label: '제작플랜&가격안내', href: '/pricing' },
     { label: '성공사례', href: '/cases' },
     { label: '예약', href: '/reservation' },
@@ -55,6 +54,43 @@ export const BOTTOM_BAR = [
   { label: '카카오톡상담', href: '#', icon: '💬' },
   { label: '블로그', href: '#', icon: '📝' },
   { label: '무료진단 상담', href: '#', icon: '✅', modal: true },
+];
+
+export const FLOATING_QUICK_MENU = [
+  {
+    label: '페이지 사례',
+    href: '/cases',
+    icon: 'pages',
+  },
+  {
+    label: '무료상담신청',
+    icon: 'check',
+    modal: true,
+    variant: 'primary',
+  },
+  {
+    label: '카톡상담',
+    href: '#',
+    icon: 'message',
+    variant: 'kakao',
+  },
+  {
+    label: '전화상담',
+    href: 'tel:01029717280',
+    icon: 'phone',
+  },
+  {
+    label: '마이페이지',
+    href: '#',
+    icon: 'user',
+  },
+  {
+    label: 'Top',
+    icon: 'top',
+    action: 'scrollTop',
+    variant: 'muted',
+    compactIcon: true,
+  },
 ];
 
 export const STICKY_FORM = {

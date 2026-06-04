@@ -13,6 +13,10 @@
 # testing
 /coverage
 
+# codex
+AGENTS.md
+AGENTS.json
+
 # next.js
 /.next/
 /out/
@@ -39,3 +43,5 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+위플로우 요구사항.xlsx
+~$위플로우 요구사항.xlsx

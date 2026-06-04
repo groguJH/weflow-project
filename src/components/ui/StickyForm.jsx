@@ -45,7 +45,7 @@ export default function StickyForm({ id }) {
       <div className="px-6 pt-6 pb-5">
         <div className="flex items-center gap-3 mb-1">
           <div className="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center flex-shrink-0">
-            <AlignLeft size={18} className="text-white" />
+            <AlignLeft size="1em" className="text-[1.125rem] text-white" />
           </div>
           <div>
             <h3 className="text-base font-bold text-white leading-tight">{STICKY_FORM.title}</h3>
@@ -54,7 +54,7 @@ export default function StickyForm({ id }) {
         </div>
       </div>
 
-      <div className="h-px bg-white/[0.06]" />
+      <div className="h-[0.0625rem] bg-white/[0.06]" />
 
       {/* 폼 */}
       <form onSubmit={handleSubmit} className="px-6 pt-5 pb-6 space-y-4">

@@ -20,7 +20,7 @@ const DAY_NAMES = ['일', '월', '화', '수', '목', '금', '토'];
 
 const Calendar = dynamic(() => import('./CalendarPicker'), {
   ssr: false,
-  loading: () => <div className="min-h-[340px]" />,
+  loading: () => <div className="min-h-[21.25rem]" />,
 });
 
 function StepBadge({ number }) {
@@ -69,7 +69,7 @@ export default function ReservationFormSection() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-cyan-500/6 rounded-full blur-3xl pointer-events-none" />
         <div className="relative text-center max-w-md bg-slate-900/70 backdrop-blur-sm border border-white/[0.07] rounded-3xl p-12">
           <div className="w-16 h-16 rounded-full bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center mx-auto mb-6">
-            <CheckCircle2 className="text-cyan-400" size={32} />
+            <CheckCircle2 size="1em" className="text-[2rem] text-cyan-400" />
           </div>
           <h2 className="text-2xl font-black text-white mb-3">예약이 완료되었습니다!</h2>
           <p className="text-slate-400 text-sm mb-4">빠른 시간 내에 연락드리겠습니다.</p>
@@ -85,9 +85,9 @@ export default function ReservationFormSection() {
 
   return (
     <section className="relative min-h-screen pt-24 pb-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
-      <div className="absolute -top-20 right-0 w-[600px] h-[600px] bg-cyan-400/8 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute -top-20 right-0 w-[37.5rem] h-[37.5rem] bg-cyan-400/8 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute top-1/2 -left-40 w-80 h-80 bg-blue-600/10 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[500px] h-48 bg-blue-700/6 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[31.25rem] h-48 bg-blue-700/6 rounded-full blur-3xl pointer-events-none" />
 
       <div className="relative max-w-2xl mx-auto">
 
@@ -101,15 +101,15 @@ export default function ReservationFormSection() {
           <p className="text-slate-400 text-xs mb-3">{RESERVATION_PAGE.subtitle}</p>
           <div className="flex flex-wrap justify-center gap-4 text-xs text-slate-300">
             <span className="flex items-center gap-1.5">
-              <Zap size={14} className="text-yellow-400" />
+              <Zap size="1em" className="text-[0.875rem] text-yellow-400" />
               평균 24시간 내 연락
             </span>
             <span className="flex items-center gap-1.5">
-              <ShieldCheck size={14} className="text-cyan-400" />
+              <ShieldCheck size="1em" className="text-[0.875rem] text-cyan-400" />
               무료 진단 포함
             </span>
             <span className="flex items-center gap-1.5">
-              <Star size={14} className="text-amber-400" />
+              <Star size="1em" className="text-[0.875rem] text-amber-400" />
               케어 플랜 상담 가능
             </span>
           </div>
@@ -121,7 +121,7 @@ export default function ReservationFormSection() {
           <div className="bg-slate-900/70 backdrop-blur-sm border border-white/[0.07] rounded-2xl p-6">
             <div className="flex items-center gap-3 mb-6">
               <StepBadge number="1" />
-              <CalendarDays size={18} className="text-cyan-400" />
+              <CalendarDays size="1em" className="text-[1.125rem] text-cyan-400" />
               <h2 className="text-base font-bold text-white">날짜 선택</h2>
             </div>
             <Calendar selectedDate={selectedDate} onSelect={handleDateSelect} />
@@ -133,7 +133,7 @@ export default function ReservationFormSection() {
           }`}>
             <div className="flex items-center gap-3 mb-6">
               <StepBadge number="2" />
-              <Clock size={18} className={selectedDate ? 'text-cyan-400' : 'text-slate-600'} />
+              <Clock size="1em" className={`text-[1.125rem] ${selectedDate ? 'text-cyan-400' : 'text-slate-600'}`} />
               <h2 className={`text-base font-bold ${selectedDate ? 'text-white' : 'text-slate-600'}`}>
                 시간 선택
               </h2>
@@ -141,7 +141,7 @@ export default function ReservationFormSection() {
 
             {!selectedDate ? (
               <div className="py-8 text-center">
-                <CalendarDays size={28} className="text-slate-700 mx-auto mb-3" />
+                <CalendarDays size="1em" className="text-[1.75rem] text-slate-700 mx-auto mb-3" />
                 <p className="text-sm text-slate-600">먼저 날짜를 선택해 주세요</p>
               </div>
             ) : (
@@ -188,7 +188,7 @@ export default function ReservationFormSection() {
           <div className="bg-slate-900/70 backdrop-blur-sm border border-white/[0.07] rounded-2xl p-6">
             <div className="flex items-center gap-3 mb-6">
               <StepBadge number="3" />
-              <FileText size={18} className="text-cyan-400" />
+              <FileText size="1em" className="text-[1.125rem] text-cyan-400" />
               <h2 className="text-base font-bold text-white">상담 신청 정보</h2>
             </div>
 
@@ -196,7 +196,7 @@ export default function ReservationFormSection() {
 
               <div>
                 <label className="flex items-center gap-1.5 text-xs text-slate-400 mb-1.5 font-medium">
-                  <User size={12} className="text-cyan-500/70" />
+                  <User size="1em" className="text-[0.75rem] text-cyan-500/70" />
                   {form.name.label}
                 </label>
                 <input
@@ -212,7 +212,7 @@ export default function ReservationFormSection() {
 
               <div>
                 <label className="flex items-center gap-1.5 text-xs text-slate-400 mb-1.5 font-medium">
-                  <Phone size={12} className="text-cyan-500/70" />
+                  <Phone size="1em" className="text-[0.75rem] text-cyan-500/70" />
                   {form.phone.label}
                 </label>
                 <input
@@ -228,7 +228,7 @@ export default function ReservationFormSection() {
 
               <div>
                 <label className="flex items-center gap-1.5 text-xs text-slate-400 mb-1.5 font-medium">
-                  <Briefcase size={12} className="text-cyan-500/70" />
+                  <Briefcase size="1em" className="text-[0.75rem] text-cyan-500/70" />
                   {form.type.label}
                 </label>
                 <select
@@ -247,7 +247,7 @@ export default function ReservationFormSection() {
 
               <div>
                 <label className="flex items-center gap-1.5 text-xs text-slate-400 mb-1.5 font-medium">
-                  <Briefcase size={12} className="text-cyan-500/70" />
+                  <Briefcase size="1em" className="text-[0.75rem] text-cyan-500/70" />
                   {form.industry.label}
                 </label>
                 <input
@@ -263,7 +263,7 @@ export default function ReservationFormSection() {
 
               <div>
                 <label className="flex items-center gap-1.5 text-xs text-slate-400 mb-1.5 font-medium">
-                  <FileText size={12} className="text-cyan-500/70" />
+                  <FileText size="1em" className="text-[0.75rem] text-cyan-500/70" />
                   {form.request.label}
                 </label>
                 <textarea
