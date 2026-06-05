@@ -1,4 +1,5 @@
-export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://weflowlab.kr';
+export const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL || 'https://weflow-web-project.vercel.app';
 export const SITE_NAME = 'WEFLOW';
 export const SITE_TITLE = 'WEFLOW — 문의로 이어지는 홈페이지를 만듭니다';
 export const SITE_DESCRIPTION =

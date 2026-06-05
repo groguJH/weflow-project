@@ -8,6 +8,7 @@ WEFLOW 랜딩/홈페이지 제작 서비스를 소개하고, 방문자가 상담
 
 - [프로젝트 개요](#프로젝트-개요)
 - [실행 방법](#실행-방법)
+- [배포 환경변수](#배포-환경변수)
 - [관리자 계정](#관리자-계정)
 - [디자인 및 UX 개선 Before / After](#디자인-및-ux-개선-before--after)
 - [라이브러리 활용 방식](#라이브러리-활용-방식)
@@ -67,6 +68,14 @@ yarn build
 
 ```bash
 yarn lint
+```
+
+## 배포 환경변수
+
+Vercel 배포 주소 기준으로 canonical URL과 SNS 공유 미리보기 URL이 정확히 잡히도록 아래 환경변수를 사용합니다.
+
+```txt
+NEXT_PUBLIC_SITE_URL=https://weflow-web-project.vercel.app
 ```
 
 ## 관리자 계정
