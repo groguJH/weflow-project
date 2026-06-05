@@ -2,6 +2,7 @@
 
 <img width="500" height="auto" alt="image" src="https://github.com/user-attachments/assets/bdc802dc-328b-4f95-9feb-ea4fe1809433" />
 
+담당자의 요구사항들을 분석하여 전체적인UI 개선, 반응형 화면, 예약·관리자 기능을 반영했습니다.
 WEFLOW 랜딩/홈페이지 제작 서비스를 소개하고, 방문자가 상담 신청과 예약으로 이어질 수 있도록 구성한 Next.js 프로젝트입니다.
 
 기존 GitHub 저장소 [lmg90219679-eng/weflow-web](https://github.com/lmg90219679-eng/weflow-web)를 clone한 뒤, 전달받은 
