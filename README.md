@@ -1,13 +1,14 @@
 # WEFLOW 홈페이지 제작 과제
+
 <img width="500" height="auto" alt="image" src="https://github.com/user-attachments/assets/bdc802dc-328b-4f95-9feb-ea4fe1809433" />
 
 WEFLOW 랜딩/홈페이지 제작 서비스를 소개하고, 방문자가 상담 신청과 예약으로 이어질 수 있도록 구성한 Next.js 프로젝트입니다.
 별도 DB가 없는 예시 프로젝트입니다.
 
-기존 GitHub 저장소 [lmg90219679-eng/weflow-web](https://github.com/lmg90219679-eng/weflow-web)를 clone한 뒤, 전달받은 
+기존 GitHub 저장소 [lmg90219679-eng/weflow-web](https://github.com/lmg90219679-eng/weflow-web)를 clone한 뒤, 전달받은
 메시지를 바탕으로 `위플로우 요구사항.xlsx`으로 정리하여 필요한 기능과 화면을 분석해 구현했습니다.
 
- [🔗프로젝트 링크 바로가기](https://weflow-web-project.vercel.app/)
+[🔗프로젝트 링크 바로가기](https://weflow-web-project.vercel.app/)
 
 <br/>
 <br/>
@@ -246,15 +247,15 @@ src
 
 ### 구조를 나눈 기준
 
-| 폴더 | 역할 | 사용 이유 |
-| --- | --- | --- |
-| `src/app` | Next.js App Router 라우트 | 페이지 URL, API Route, metadata 관리 |
-| `src/components/layout` | Header, Footer, fixed menu | 모든 페이지에서 공유되는 레이아웃 분리 |
-| `src/components/ui` | 버튼, 모달, 폼 필드, 섹션 헤더 등 | 여러 페이지에서 반복되는 UI 재사용 |
-| `src/components/admin` | 관리자 전용 Provider | Ant Design 설정을 관리자 영역에만 적용 |
-| `src/data` | 화면 문구, 가격, 사례, 약관 데이터 | UI와 데이터를 분리해 수정이 쉽도록 구성 |
-| `src/features/*` | 페이지별 섹션 컴포넌트 | 홈, 가격, 예약, 관리자 등 도메인별 모듈화 |
-| `src/server` | JSON 저장소, 관리자 인증, 데이터 처리 | API Route에서 공통으로 쓰는 서버 로직 분리 |
+| 폴더                    | 역할                                  | 사용 이유                                  |
+| ----------------------- | ------------------------------------- | ------------------------------------------ |
+| `src/app`               | Next.js App Router 라우트             | 페이지 URL, API Route, metadata 관리       |
+| `src/components/layout` | Header, Footer, fixed menu            | 모든 페이지에서 공유되는 레이아웃 분리     |
+| `src/components/ui`     | 버튼, 모달, 폼 필드, 섹션 헤더 등     | 여러 페이지에서 반복되는 UI 재사용         |
+| `src/components/admin`  | 관리자 전용 Provider                  | Ant Design 설정을 관리자 영역에만 적용     |
+| `src/data`              | 화면 문구, 가격, 사례, 약관 데이터    | UI와 데이터를 분리해 수정이 쉽도록 구성    |
+| `src/features/*`        | 페이지별 섹션 컴포넌트                | 홈, 가격, 예약, 관리자 등 도메인별 모듈화  |
+| `src/server`            | JSON 저장소, 관리자 인증, 데이터 처리 | API Route에서 공통으로 쓰는 서버 로직 분리 |
 
 ### 메타데이터 구조
 
@@ -277,14 +278,14 @@ src/data/metadata.js
 
 ### 라이브러리 배치 기준
 
-| 라이브러리 | 배치 위치 | 구조상 역할 |
-| --- | --- | --- |
-| `framer-motion` | `features/home_page`, `components/ui` | 홈 Hero 등장 애니메이션과 인터랙션 처리 |
-| `antd` | `features/admin`, `components/admin` | 관리자 폼, 테이블, 모달, 탭, 카드 UI 구성 |
-| `react-scroll` | `components/layout/FloatingQuickMenu.jsx` | 우측 fixed 메뉴의 Top 이동 처리 |
-| `lucide-react` | `components`, `features` | 아이콘을 프로젝트 전반에서 일관되게 사용 |
-| `next/link`, `next/image` | 페이지/섹션 컴포넌트 | 라우팅과 이미지 최적화 처리 |
-| `Tailwind CSS` | 전체 컴포넌트 | 반응형, 색상, 간격, 레이아웃 스타일링 |
+| 라이브러리                | 배치 위치                                 | 구조상 역할                               |
+| ------------------------- | ----------------------------------------- | ----------------------------------------- |
+| `framer-motion`           | `features/home_page`, `components/ui`     | 홈 Hero 등장 애니메이션과 인터랙션 처리   |
+| `antd`                    | `features/admin`, `components/admin`      | 관리자 폼, 테이블, 모달, 탭, 카드 UI 구성 |
+| `react-scroll`            | `components/layout/FloatingQuickMenu.jsx` | 우측 fixed 메뉴의 Top 이동 처리           |
+| `lucide-react`            | `components`, `features`                  | 아이콘을 프로젝트 전반에서 일관되게 사용  |
+| `next/link`, `next/image` | 페이지/섹션 컴포넌트                      | 라우팅과 이미지 최적화 처리               |
+| `Tailwind CSS`            | 전체 컴포넌트                             | 반응형, 색상, 간격, 레이아웃 스타일링     |
 
 ### 데이터 흐름 구조
 
