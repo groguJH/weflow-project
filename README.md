@@ -9,7 +9,9 @@ WEFLOW 랜딩/홈페이지 제작 서비스를 소개하고, 방문자가 상담
 전달받은 문자메시지를 바탕으로 `위플로우 요구사항.xlsx`으로 정리하여  <br/>
 필요한 기능과 화면을 분석해 구현했습니다.
 
- [🔗프로젝트 링크 바로가기](https://weflow-web-project.vercel.app/)
+ [🔗프로젝트 링크 바로가기](https://weflow-project.vercel.app/)
+
+
 
  <br/>
 <br/>
