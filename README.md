@@ -1,6 +1,6 @@
 # WEFLOW 홈페이지 제작 과제
 
-<img width="800" height="auto" alt="image" src="https://github.com/user-attachments/assets/e01c0470-f983-4bad-8620-0c46789992b7" />
+<img width="800" height="auto" alt="image" src="https://github.com/user-attachments/assets/3fb7215a-bf74-4a04-b93a-ffe000039882" />
 
 
 담당자의 요구사항들을 분석하여 전체적인UI 개선, 반응형 화면, 예약·관리자 기능을 반영했습니다.  <br/>
