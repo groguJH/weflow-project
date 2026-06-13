@@ -1,6 +1,7 @@
 # WEFLOW 홈페이지 제작 과제
 
-<img width="500" height="auto" alt="image" src="https://github.com/user-attachments/assets/bdc802dc-328b-4f95-9feb-ea4fe1809433" />
+<img width="800" height="auto" alt="image" src="https://github.com/user-attachments/assets/e01c0470-f983-4bad-8620-0c46789992b7" />
+
 
 담당자의 요구사항들을 분석하여 전체적인UI 개선, 반응형 화면, 예약·관리자 기능을 반영했습니다.  <br/>
 WEFLOW 랜딩/홈페이지 제작 서비스를 소개하고, 방문자가 상담 신청과 예약으로 이어질 수 있도록 구성한 Next.js 프로젝트입니다.
@@ -9,7 +10,11 @@ WEFLOW 랜딩/홈페이지 제작 서비스를 소개하고, 방문자가 상담
 전달받은 문자메시지를 바탕으로 `위플로우 요구사항.xlsx`으로 정리하여  <br/>
 필요한 기능과 화면을 분석해 구현했습니다.
 
- [🔗프로젝트 링크 바로가기](https://weflow-project.vercel.app/)
+
+프로젝트 링크는 다음과 같습니다.
+- 일반 사용자 페이지: [https://weflow-project.vercel.app/](https://weflow-project.vercel.app/)
+- 회사 전용 랜딩페이지: [https://weflow-project.vercel.app/marketing](https://weflow-project.vercel.app/marketing)
+- 관리자 페이지: [https://weflow-project.vercel.app/admin](https://weflow-project.vercel.app/admin)
 
 
 
@@ -672,6 +677,7 @@ features/admin
 ## 주요 라우트
 
 - `/` 홈
+- `/marketing` 회사 전용 랜딩페이지
 - `/landing` 랜딩페이지
 - `/services` 서비스 제작 과정
 - `/pricing` 제작플랜 및 가격 안내
